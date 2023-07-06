@@ -55,5 +55,6 @@ let package = Package(
                  ],
                  publicHeadersPath: "SentrySwiftUI/SentryInternal/"
                )
-    ]
+    ],
+    cxxLanguageStandard: .cxx14
 )
