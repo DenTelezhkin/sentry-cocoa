@@ -31,6 +31,10 @@ let package = Package(
                 .headerSearchPath("SentryCrash/Reporting/Filters"),
                 .headerSearchPath("SentryCrash/Reporting/Filters/Tools"),
                 .headerSearchPath("SentryCrash/Reporting/Tools")
+            ],
+            linkerSettings: [
+                .linkedLibrary("z"),
+                .linkedLibrary("c++")
             ]
         ),
         .target( name: "SentryPrivate",
